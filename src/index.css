@@ -1,0 +1,50 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center{
+    @apply flex justify-center items-center;
+}
+
+.title{
+    @apply text-xl font-bold pb-6 uppercase;
+}
+
+input{
+    @apply focus:outline-none text-black border-none p-3;
+}
+.nes-field{
+    @apply flex justify-between items-center w-full;
+}
+.nes-field label{
+    @apply capitalize;
+}
+.nes-field input{
+    @apply flex-1 ml-3;
+}
+.nes-btn{
+    @apply uppercase px-6 py-3;
+}
+.is-primary{
+    @apply bg-indigo-700 text-white hover:bg-indigo-800;
+}
+.is-success{
+    @apply bg-green-700 text-white hover:bg-green-800;
+}
+.is-error{
+    @apply bg-red-700 text-white hover:bg-red-800;
+}
+.is-warning{
+    @apply bg-yellow-700 text-white hover:bg-yellow-800;
+}
+.nes-container{
+    @apply container p-6 bg-blue-900 text-white;
+}
+.value{
+    @apply bg-blue-700 px-3 py-1;
+}
